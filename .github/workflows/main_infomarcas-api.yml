@@ -28,8 +28,8 @@ jobs:
         run: dotnet build D:\a\TestApiAzure\TestApiAzure\SimpleApi\SimpleApi.sln --configuration Release
 
       - name: Tests
-        run: dotnet test D:\a\TestApiAzure\TestApiAzure\Tests\Tests.scproj
-        
+        run: dotnet test D:\a\TestApiAzure\TestApiAzure\Tests
+
       - name: dotnet publish
         run: dotnet publish D:\a\TestApiAzure\TestApiAzure\SimpleApi\SimpleApi.csproj -c Release -o ${{env.DOTNET_ROOT}}/myapp
 
