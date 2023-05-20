@@ -25,7 +25,7 @@ jobs:
         run: chdir
 
       - name: Build with dotnet
-        run: dotnet build --configuration Release
+        run: dotnet build D:\a\TestApiAzure\TestApiAzure\SimpleApi\SimpleApi.sln --configuration Release
 
       - name: dotnet publish
         run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
