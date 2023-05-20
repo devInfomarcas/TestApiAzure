@@ -21,9 +21,10 @@ jobs:
         with:
           dotnet-version: '7.x'
           include-prerelease: true
+      - name: Print current path
+        run: chdir
 
       - name: Build with dotnet
-        run: chdir
         run: dotnet build --configuration Release
 
       - name: dotnet publish
