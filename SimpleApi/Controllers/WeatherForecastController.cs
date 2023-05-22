@@ -21,7 +21,7 @@ namespace SimpleApi.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
-            _logger.LogInformation("Hitting the GET weather forcast");
+            _logger.LogError("Hitting the GET weather forcast");
            
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
